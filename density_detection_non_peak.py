@@ -22,11 +22,18 @@ input_video_path = './input/'
 # start_point = (127, 149)
 # end_point = (572, 355)
 
+print('Do you need a boundary box in the video?')
+conf = input("type 'y' for yes, 'n' for no: ")
+
 input_video = 'lrt_bandaraya_non_peak.mp4'
-start_point = (127, 135)
-end_point = (310, 353)
-# start_point = (0, 0)
-# end_point = (0, 0)
+# start_point = (127, 135)
+# end_point = (310, 353)
+start_point = (0, 0)
+end_point = (0, 0)
+
+if conf.lower() == 'y':
+	start_point = (127, 135)
+	end_point = (310, 353)
 
 ##########################################################
 ##########################################################
